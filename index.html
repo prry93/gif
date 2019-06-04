@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>giphy</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<style type="text/css">
+    button,
+    form,
+    div,
+    input {
+      margin: 10px;
+      text-align: center;
+    }
+    h1 {
+      text-align: center;
+      color: teal;
+    }
+    .gif-layout{
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1>Animal Search</h1>
+      <form id="gifs-form">
+        <label for="gifs-input">Add An Animal</label>
+        <input type="text" id="gifs-input">
+        <!-- Button triggers new gifs  -->
+        <input id="add-gif" type="submit" value="Add a gif">
+      </form>
+      <!-- Div for the buttons -->
+      <div id="buttons-view"></div>
+    </div>
+  </div>
+
+    <!-- Gif images will appear in this div -->
+    <div id="gifs-view"></div>
+
+    <!-- Js scripts to be run -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </div>
+</body>
+
+</html>
+
