@@ -6,6 +6,9 @@
   <title>giphy</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 <style type="text/css">
+  body{
+    background-color: lightseagreen;
+  }
     button,
     form,
     div,
@@ -19,6 +22,7 @@
     }
     .gif-layout{
       display: inline-block;
+      color: white;
     }
   </style>
 </head>
@@ -26,14 +30,15 @@
 <body>
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1>Animal Search</h1>
+      <h1>Gif Search</h1>
       <form id="gifs-form">
-        <label for="gifs-input">Add An Animal</label>
+        <label for="gifs-input">Add An Animal (or whatever you feel like)</label>
         <input type="text" id="gifs-input">
         <!-- Button triggers new gifs  -->
         <input id="add-gif" type="submit" value="Add a gif">
       </form>
       <!-- Div for the buttons -->
+      <p>Here's some animals to start. Add some more, if you feel like it.</p>
       <div id="buttons-view"></div>
     </div>
   </div>
