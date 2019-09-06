@@ -23,7 +23,7 @@ for (var i = 0; i < results.length; i++) {
 // Creating a div tag for the gif image data to be stored.
   var animalDiv = $("<div>");
     animalDiv.addClass("gif-layout");
-  var title = "Title: " + results[i].title;
+  var title =  results[i].title;
 
 // Creating a paragraph tag with the result item's title
   var p = $("<p>").text(title);
@@ -76,7 +76,8 @@ function renderButtons() {
     a.text(searchTerm[i]);
   // Adding the button to the buttons-view div
     $("#buttons-view").append(a);
-
+    // clears form after button is created
+    $('#gifs-form')[0].reset();
   }
  }
 
@@ -90,6 +91,11 @@ $("#add-gif").on("click", function(event) {
   searchTerm.push(animal);
   renderButtons();
 });
+
+function resetForm() {
+  $('#gifs-form')[0].reset();
+}
+
 
 
 // Adding .onclick for .animal-btn
