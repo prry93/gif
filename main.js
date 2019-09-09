@@ -97,7 +97,6 @@ function resetForm() {
 }
 
 
-
 // Adding .onclick for .animal-btn
   $(document).on("click", ".animal-btn", displayGif);
 

@@ -1,0 +1,18 @@
+body{
+  background-color: lightseagreen;
+}
+  button,
+  form,
+  div,
+  input {
+    margin: 10px;
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+    color: teal;
+  }
+  .gif-layout{
+    display: inline-block;
+    color: whitesmoke;
+  }
